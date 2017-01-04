@@ -7,4 +7,4 @@
 #     Description         :     Run all PE problems and measure runtime 
 ###############################################################################
 
-find -maxdepth 1 -mindepth 1 -type d -exec ./run_one.sh {} \;
+find -maxdepth 1 -mindepth 1 -type d -name 0\* -exec ./run_one.sh {} \;

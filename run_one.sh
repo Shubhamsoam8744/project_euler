@@ -8,7 +8,7 @@
 ###############################################################################
 echo $1
 cd $1
-rm solution
+rm -f solution
 ghc solution.hs
 time ./solution
 cd ..
