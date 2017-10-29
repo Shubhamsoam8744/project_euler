@@ -1,6 +1,9 @@
-module Primes
-( primes
-) where
+module Problems.Problem003 (
+  primes,
+  primeFactors,
+  solution
+  )
+where
 
  -- ordered lists, difference and union
 minus (x:xs) (y:ys) = case (compare x y) of 
@@ -32,3 +35,13 @@ primes = 2 : 3 : ([5,7..] `minus`
                           [[p*p, p*p+2*p..] | p <- tail primes])
 
 
+
+primeFactors n = factor n primes
+  where
+    factor n (p:ps)
+        | p*p > n        = [n]
+        | n `mod` p == 0 = p : factor (n `div` p) (p:ps)
+        | otherwise      =     factor n ps
+
+solution = last $ primeFactors target
+  where target = 600851475143
