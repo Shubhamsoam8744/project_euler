@@ -10,4 +10,4 @@ while fib<TARGET:
     if fib%2==0:
         SUM += fib
 
-print SUM
+print(SUM)

@@ -19,7 +19,8 @@ cabal-version:       >=1.10
 
 Library
         build-depends:   base
-        exposed-modules: Problems.Problem001
+        exposed-modules: Problems.Problem001,
+                         Problems.Problem002
 
 -- executable project-euler
 --   main-is:             Main.hs
