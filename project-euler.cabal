@@ -23,7 +23,9 @@ Library
         exposed-modules: Problems.Problem001,
                          Problems.Problem002,
                          Problems.Problem003,
-                         Problems.Problem004
+                         Problems.Problem004,
+                         Problems.Problem012
+        ghc-options: -Wall
 
 -- executable project-euler
 --   main-is:             Main.hs
