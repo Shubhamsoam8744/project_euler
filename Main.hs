@@ -5,6 +5,7 @@ import Problems.Problem001 as P001
 import Problems.Problem002 as P002
 import Problems.Problem003 as P003
 import Problems.Problem004 as P004
+import Problems.Problem006 as P006
 import Problems.Problem012 as P012
 
 -- | 'main' runs the main program
@@ -19,5 +20,7 @@ main = hspec $ do
       P003.solution `shouldBe` 6857
     it "Solution to problem 004 should be 906609" $ do
       P004.solution `shouldBe` (906609 :: Int)
+    it "Solution to problem 006 should be 25164150" $ do
+      P006.solution `shouldBe` (25164150 :: Int)
     it "Solution to problem 012 should be 76576500" $ do
       P012.solution `shouldBe` (76576500 :: Int)
